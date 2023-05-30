@@ -1,0 +1,50 @@
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Desafio pizzaria Borges</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <img
+            src="/assets/Captura de Tela 2023-05-16 às 21.19 1.png"
+            alt="Logomarca da pizzaria patroni"
+        />
+
+        <form id="form">
+            <div class="form_fild">
+                <label for="valor_conta">Valor da conta: R$</label>
+                <input
+                    type="number"
+                    name="valor_conta"
+                    id="valor_conta"
+                    required
+                />
+            </div>
+
+            <div class="form_fild">
+                <label for="valor_taxa">Valor da taxa de serviço: %</label>
+                <input
+                    type="number"
+                    name="valor_taxa"
+                    id="valor_taxa"
+                    required
+                />
+            </div>
+
+            <div class="form_fild">
+                <label for="pagantes">Quantidade de pagantes:</label>
+                <input type="number" name="pagantes" id="pagantes" required />
+            </div>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <p>
+            O valor a ser pago por cada pessoa é de: <span id="resultado"></span>
+        </p>
+
+        <script src="script.js"></script>
+    </body>
+</html>
